@@ -1,0 +1,18 @@
+# The connection string to for your Zookeeper instance.
+spring:
+  cloud:
+    zookeeper:
+      config:
+        enable: true
+        root: config
+        cacheEnabled: false
+      connect-string: 192.168.99.100:2181
+  application:
+    name: zookeeper-demo
+#zookeeper-demo:
+#  mongo:
+#spring.cloud.zookeeper.config.root: config
+#spring.cloud.zookeeper.connectString: 192.168.99.100:2181
+
+# The name of the DB
+#mongo.host: ZookeeperSampleApplication
